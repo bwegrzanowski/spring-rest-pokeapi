@@ -1,10 +1,10 @@
-package com.pokemon.services;
+package com.pokemon.app.services;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pokemon.dto.BookDto;
+import com.pokemon.app.dto.BookDto;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

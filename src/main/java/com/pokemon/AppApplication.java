@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
+
 public class AppApplication {
     private static final Logger log = LoggerFactory.getLogger(AppApplication.class);
 

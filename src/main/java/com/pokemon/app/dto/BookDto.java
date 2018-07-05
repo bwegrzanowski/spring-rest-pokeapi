@@ -1,4 +1,4 @@
-package com.pokemon.dto;
+package com.pokemon.app.dto;
 
 public class BookDto {
 

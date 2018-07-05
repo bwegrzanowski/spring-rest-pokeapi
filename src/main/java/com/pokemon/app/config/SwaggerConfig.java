@@ -1,4 +1,4 @@
-package com.pokemon.config;
+package com.pokemon.app.config;
 
 
 import org.springframework.context.annotation.Bean;

@@ -1,7 +1,7 @@
 package com.pokemon.app.unit;
 
 import com.pokemon.app.service.PokemonServiceImplTest;
-import com.pokemon.services.PokemonService;
+import com.pokemon.app.services.PokemonService;
 import org.junit.Assert;
 import org.junit.Test;
 

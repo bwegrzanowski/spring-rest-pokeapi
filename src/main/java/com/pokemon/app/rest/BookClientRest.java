@@ -1,9 +1,11 @@
-package com.pokemon.rest;
+package com.pokemon.app.rest;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pokemon.dto.BookDto;
-import com.pokemon.services.BookService;
+import com.pokemon.app.BookDto;
+import com.pokemon.app.BookService;
+import com.pokemon.app.dto.BookDto;
+import com.pokemon.app.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

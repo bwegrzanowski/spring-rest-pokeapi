@@ -1,7 +1,9 @@
-package com.pokemon.dto;
+package com.pokemon.app.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.pokemon.app.StatsDto;
+import org.springframework.data.annotation.Transient;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -12,17 +14,19 @@ public class PokemonDto {
     private Long id;
 
     private String name;
-    private Integer base_experience;
     private Integer height;
     private Integer weight;
+    private Integer base_experience;
 
 //species
     private String speciesUrl;
     private String speciesName;
 
+    @Transient
     @JsonProperty("abilities")
     private AbilitiesDto[] abilities;
 
+    @Transient
     @JsonProperty("stats")
     private StatsDto[] stats;
 
