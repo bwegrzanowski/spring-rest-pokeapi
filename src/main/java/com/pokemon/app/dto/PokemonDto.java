@@ -2,16 +2,16 @@ package com.pokemon.app.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.pokemon.app.StatsDto;
 import org.springframework.data.annotation.Transient;
+import org.springframework.hateoas.ResourceSupport;
 
 import java.util.Arrays;
 import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class PokemonDto {
+public class PokemonDto extends ResourceSupport {
 
-    private Long id;
+    private Long idPokemon;
 
     private String name;
     private Integer height;
@@ -37,6 +37,12 @@ public class PokemonDto {
         this.speciesUrl = (String) spec.get("url");
     }
 
+    public PokemonDto(Long idPokemon, String name, Integer weight) {
+        this.idPokemon = idPokemon;
+        this.name = name;
+        this.weight = weight;
+    }
+
     public PokemonDto(String name, Integer weight) {
         this.name = name;
         this.weight = weight;
@@ -45,12 +51,12 @@ public class PokemonDto {
     public PokemonDto() {
     }
 
-    public Long getId() {
-        return id;
+    public Long getPokemonId() {
+        return idPokemon;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdPokemon(Long idPokemon) {
+        this.idPokemon = idPokemon;
     }
 
     public String getName() {
@@ -104,7 +110,7 @@ public class PokemonDto {
     @Override
     public String toString() {
         return "PokemonDto{" +
-                "id=" + id +
+                "idPokemon=" + idPokemon +
                 ", name='" + name + '\'' +
                 ", base_experience=" + base_experience +
                 ", height=" + height +

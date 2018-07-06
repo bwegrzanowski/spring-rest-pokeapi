@@ -2,8 +2,6 @@ package com.pokemon.app.rest;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pokemon.app.BookDto;
-import com.pokemon.app.BookService;
 import com.pokemon.app.dto.BookDto;
 import com.pokemon.app.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;

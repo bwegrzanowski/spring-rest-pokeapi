@@ -1,4 +1,4 @@
-package com.pokemon.app.security;
+package com.pokemon.app.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private com.pokemon.app.security.BasicAuthenticationPoint basicAuthenticationEntryPoint;
+    private BasicAuthenticationPoint basicAuthenticationEntryPoint;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

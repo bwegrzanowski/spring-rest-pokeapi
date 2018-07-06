@@ -1,4 +1,4 @@
-package com.pokemon.app.rowmapper;
+package com.pokemon.app.mapper;
 
 import com.pokemon.app.dto.PokemonDto;
 import org.springframework.jdbc.core.RowMapper;
@@ -11,7 +11,7 @@ public class PokemonRowMapper implements RowMapper<PokemonDto> {
     public PokemonDto mapRow(ResultSet rs, int rowNum) throws SQLException {
         PokemonDto pokemon = new PokemonDto();
 
-        pokemon.setId((long) rs.getInt("id"));
+        pokemon.setIdPokemon((long) rs.getInt("idPokemon"));
         pokemon.setName(rs.getString("name"));
         pokemon.setHeight(rs.getInt("height"));
         pokemon.setWeight(rs.getInt("weight"));

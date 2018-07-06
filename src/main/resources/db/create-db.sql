@@ -1,13 +1,13 @@
 --DROP TABLE users IF EXISTS;
 
 CREATE TABLE users (
-  id INTEGER PRIMARY KEY,
+  idPokemon INTEGER PRIMARY KEY,
   name VARCHAR(30),
   email  VARCHAR(50)
 );
 
 CREATE TABLE pokemons (
-  id INTEGER auto_increment PRIMARY KEY,
+  idPokemon INTEGER auto_increment PRIMARY KEY,
   name VARCHAR(30),
   weight  VARCHAR (5),
   height VARCHAR (5),

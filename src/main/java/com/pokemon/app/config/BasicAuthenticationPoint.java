@@ -1,4 +1,4 @@
-package com.pokemon.app.security;
+package com.pokemon.app.config;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
